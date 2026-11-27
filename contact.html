@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Cozy Cafe</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffaf3;
+            color: #3e2723;
+        }
+
+        header {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .contact {
+            max-width: 450px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #6d4c41;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cozy Cafe</h1>
+
+    <nav>
+    <a href="index2.html">Home</a>
+
+    <a href="menu1.html">Menu</a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a href="booking.html">Booking</a>
+</nav>
+</header>
+
+<div class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Address: Nagpur, Maharashtra</p>
+    <p>Email: cozycafe@example.com</p>
+    <p>Opening Hours: 10 AM to 10 PM</p>
+
+    <h3>Send Us a Message</h3>
+
+    <form onsubmit="sendMessage(event)">
+
+        <input type="text"
+               placeholder="Enter Your Name"
+               required>
+
+        <input type="email"
+               placeholder="Enter Your Email"
+               required>
+
+        <textarea placeholder="Write Your Message"
+                  rows="5"
+                  required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 Cozy Cafe</p>
+</footer>
+
+<script>
+    function sendMessage(event) {
+        event.preventDefault();
+
+        alert("Thank you for contacting Cozy Cafe!");
+
+        event.target.reset();
+    }
+</script>
+
+</body>
+</html>
